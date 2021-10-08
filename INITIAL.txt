@@ -1,0 +1,10 @@
+require("GPIO");
+require("Timer");
+
+pinMode(2, OUTPUT);
+
+var led=0;
+setInterval(function(){
+  digitalWrite(2, led);
+  led=led^1;
+},500);

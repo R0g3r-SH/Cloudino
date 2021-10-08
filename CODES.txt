@@ -1,0 +1,4 @@
+C:\Users\Roger Sarinana\AppData\Local\Programs\Python\Python38-32\Lib\site-packages>
+
+esptool.py --port COM9 --baud 115200 erase_flash
+esptool.py --port COM9 write_flash -fm dio -fs 32m 0x00000 Cloudino.bin
